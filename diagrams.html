@@ -57,12 +57,13 @@ Highcharts.chart('container', {
 
     yAxis: {
         gridLineInterpolation: 'polygon',
+        tickInterval: 2,
         labels: false,
         lineWidth: 0,
         min: 0,
         max: 10,
         alternateGridColor: 'rgba(255,251,251,0.6)',
-        tickInterval: 2,
+
     },
 
     tooltip: {
@@ -80,7 +81,7 @@ Highcharts.chart('container', {
     series: [{
         name: 'Compétences',
         data: [5, 9, 6, 8, 7, 10],
-        pointPlacement: 'on'
+        //pointPlacement: 'off'
     }],
 
     responsive: {
